@@ -43,6 +43,9 @@ export class AppComponent {
 
   public goBack() {
     this.isShow = !this.isShow;
+    this.fileContent= '';
+    this.searchCount= 0;
+    this.searchText= '';
   }
 
 }
