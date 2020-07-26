@@ -1,0 +1,15 @@
+<div class="container">
+  <div *ngIf="isShow">
+    <h1>Upload a text file</h1>
+    <div>
+      <input type="file" id="textFile" accept=".txt" (change)="onChange($event.target.files)">
+    </div>
+  </div>
+  <div *ngIf="!isShow">
+    <input type="search" id="searchInput" [(ngModel)]="searchText" (ngModelChange)="search()"
+      placeholder="Search for text...">
+    <p id="searchCount">Search count: {{searchCount}}</p>
+    <p id="content" [innerHTML]="highlight()"></p>
+    <button id="backButton" (click)="goBack()">Go back</button>
+  </div>
+</div>

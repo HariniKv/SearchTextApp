@@ -1,0 +1,63 @@
+.container {
+    display        : flex;
+    flex-wrap      : wrap;
+    align-items    : center;
+    text-align     : center;
+    justify-content: center;
+    padding        : 60px;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-size  : 50px;
+}
+
+#textFile {
+    font-size: 20px;
+    border   : 1px solid cadetblue;
+}
+
+#file-upload-button {
+    background-color: #b1f6f9;
+    font-family     : cursive;
+
+}
+
+#searchInput {
+    background-color: #b1f6f9;
+    font-family     : cursive;
+    font-size       : 20px;
+    width           : 50%;
+    text-align      : left;
+    float           : left;
+}
+
+p {
+    font-family: 'Mali', cursive;
+    margin     : 0px auto;
+}
+
+#content {
+    border     : 1px solid black;
+    padding    : 20px;
+    line-height: 40px;
+}
+
+#searchCount {
+    border     : none;
+    text-align : right;
+    font-size  : 20px;
+    font-weight: bold;
+}
+
+#backButton {
+    font-family     : 'Mali', cursive;
+    margin          : 20px;
+    font-size       : 20px;
+    border-radius   : 10px;
+    background-color: turquoise;
+}
+
+::ng-deep div span.highlightText {
+    background: #c4fff8;
+}
